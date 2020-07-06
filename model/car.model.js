@@ -3,7 +3,8 @@ const mongoose = require("mongoose");
 var CarsScheme = new mongoose.Schema({
     ID : {
         type : String,
-        required : "Required"
+        required : "Required",
+        index: {unique: true, dropDups: true}
     },
     Make : {
         type : String
