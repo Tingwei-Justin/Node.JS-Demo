@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-mongoose.connect("mongodb://localhost:27017/Justin", { useNewUrlParser: true,  useUnifiedTopology: true, useCreateIndex: true },  (error)=>{
+mongoose.connect("mongodb://127.0.0.1:27017/test", { useNewUrlParser: true,  useUnifiedTopology: true, useCreateIndex: true },  (error)=>{
     if(!error) {
         console.log("Success connected");
     }

@@ -27,7 +27,7 @@ application.get('/', (req, res)=>{
 
 application.use("/inventory", CarController)
 
-application.listen("3000", ()=>{
+application.listen("8080", "127.0.0.1", ()=>{
     console.log("Server started")
 })
 
